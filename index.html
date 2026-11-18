@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Æramyd · Small, well-made apps</title>
-<meta name="description" content="Æramyd is an independent app studio making small, well-made apps that run in your browser, on any device.">
+<meta name="description" content="Æramyd is an independent app studio. Æramyd Sketch, Notes and Plot: small, well-made apps that run in your browser, on any device.">
 <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F5F6FA" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="dark light">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Æramyd">
 <meta property="og:title" content="Æramyd · Small, well-made apps">
-<meta property="og:description" content="Draw it rough. Lift. It's clean. Try Æramyd Sketch, free in your browser.">
+<meta property="og:description" content="Sketch, Notes and Plot. Small, well-made apps that run in your browser. No ads, no account.">
 <meta property="og:url" content="https://aeramyd.pages.dev/">
 <meta property="og:image" content="https://aeramyd.pages.dev/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -122,6 +122,22 @@
   .row-links a.sub{color:var(--muted)}
   .muted-title{color:var(--muted)}
 
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s ease,transform .2s ease}
+  .app:hover{border-color:var(--iris);transform:translateY(-2px)}
+  .app-top{display:flex;justify-content:space-between;align-items:center}
+  .app h3{font-size:22px;font-weight:600;letter-spacing:-.015em}
+  .app-line{font-size:15px;line-height:1.6;color:var(--muted)}
+  .tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+  .tags li{font-size:13px;font-weight:500;padding:6px 10px;border-radius:14px;border:1px solid var(--line);color:var(--fg)}
+  .meta{margin:4px 0 0;display:flex;flex-direction:column;gap:6px;font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+  .meta div{display:flex;gap:10px}
+  .meta dt{color:var(--muted);min-width:64px}
+  .meta dd{margin:0}
+  .app-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+  .app .app-icon{overflow:hidden}
+  .soon{margin-top:16px}
+
   .about{display:flex;flex-wrap:wrap;gap:20px 40px}
   .about h2{flex:1 1 240px}
   .about-body{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:16px}
@@ -187,7 +203,7 @@
   <section class="hero" id="top">
     <div class="hero-head">
       <h1>Draw it rough.<br><em>Lift.</em> It's clean.</h1>
-      <p class="lead">Æramyd is an independent studio making small, well-made apps. Try the first one right here.</p>
+      <p class="lead">Æramyd is an independent studio making small, well-made apps. Try one right here.</p>
     </div>
 
     <div class="pad" id="pad">
@@ -198,8 +214,9 @@
     </div>
 
     <div class="cta">
-      <a class="btn btn-primary" href="https://aeramyd-sketch.pages.dev">Open Æramyd Sketch</a>
-      <span class="note">Free · No account · Works offline</span>
+      <a class="btn btn-primary" href="#apps">Explore the apps</a>
+      <a class="btn btn-ghost" href="https://aeramyd-sketch.pages.dev">Open Æramyd Sketch</a>
+      <span class="note">No ads · No account · Works offline</span>
     </div>
   </section>
 
@@ -224,21 +241,74 @@
   <section id="apps" aria-labelledby="apps-title" class="reveal">
     <div class="sec-head">
       <h2 id="apps-title">Apps</h2>
-      <span class="note">1 live · more in progress</span>
+      <span class="note">3 live · more in progress</span>
     </div>
-    <div class="list">
-      <div class="row">
-        <div class="app-icon"><svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><circle cx="20" cy="20" r="11" fill="none" stroke="#F5F6FA" stroke-width="3"/><circle cx="31" cy="20" r="3.2" fill="#5546FF"/></svg></div>
-        <div class="row-text"><h3>Æramyd Sketch</h3><p>Sketching with shapes that snap clean. iPad, Android tablets and phones.</p></div>
-        <span class="pill pill-live">Live</span>
-        <div class="row-links">
-          <a href="https://aeramyd-sketch.pages.dev">Open</a>
-          <a class="sub" href="https://github.com/aeramyd/aeramyd-sketch">GitHub</a>
+    <div class="apps">
+
+      <article class="app">
+        <div class="app-top">
+          <div class="app-icon" aria-hidden="true"><svg viewBox="0 0 40 40" width="32" height="32"><circle cx="20" cy="20" r="11" fill="none" stroke="#F5F6FA" stroke-width="3"/><circle cx="31" cy="20" r="3.2" fill="#5546FF"/></svg></div>
+          <span class="pill pill-live">Live</span>
         </div>
-      </div>
+        <h3>Æramyd Sketch</h3>
+        <p class="app-line">Sketch freely. Rough strokes snap into clean shapes the moment you lift your pen.</p>
+        <ul class="tags" aria-label="Features">
+          <li>Snap on lift</li><li>Draw over photos</li><li>SVG and PNG export</li>
+        </ul>
+        <dl class="meta">
+          <div><dt>Runs on</dt><dd>iPad, Android tablets, phones</dd></div>
+          <div><dt>Price</dt><dd>Free · Support with a coffee</dd></div>
+        </dl>
+        <div class="app-links">
+          <a class="btn btn-primary btn-sm" href="https://aeramyd-sketch.pages.dev">Open</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/aeramyd/aeramyd-sketch">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app">
+        <div class="app-top">
+          <div class="app-icon" aria-hidden="true"><svg viewBox="0 0 56 56" width="56" height="56"><defs><clipPath id="nclip"><rect width="56" height="56" rx="14"/></clipPath></defs><g clip-path="url(#nclip)"><rect width="56" height="56" fill="#0B1020"/><path d="M38 0 H56 V18 Z" fill="#5546FF"/><path d="M38 0 L38 18 L56 18 Z" fill="#2E3560"/></g><g transform="translate(12 16) scale(.27)"><g fill="#F5F6FA"><rect x="40" y="14" width="46" height="10"/><rect x="48" y="14" width="10" height="72"/><rect x="48" y="76" width="38" height="10"/></g><rect x="30" y="45" width="48" height="10" fill="#5546FF"/><path d="M12 86 L40 14 L51 14 L23 86 Z" fill="#F5F6FA"/></g></svg></div>
+          <span class="pill pill-live">Live</span>
+        </div>
+        <h3>Æramyd Notes</h3>
+        <p class="app-line">Private notes you type, write and sketch. Encrypted and saved only on your device.</p>
+        <ul class="tags" aria-label="Features">
+          <li>Keyboard or any pen</li><li>Auto-fix shapes</li><li>Passcode and Face ID lock</li><li>4 page styles</li>
+        </ul>
+        <dl class="meta">
+          <div><dt>Runs on</dt><dd>iPhone, iPad, Android, Windows, Mac</dd></div>
+          <div><dt>Price</dt><dd>Free to start · Pro is a one-time coffee</dd></div>
+        </dl>
+        <div class="app-links">
+          <a class="btn btn-primary btn-sm" href="https://aeramyd-notes.pages.dev">Open</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/aeramyd/aeramyd-notes">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app">
+        <div class="app-top">
+          <div class="app-icon" aria-hidden="true"><svg viewBox="0 0 56 56" width="56" height="56"><rect width="56" height="56" rx="14" fill="#0B1020"/><path d="M14 12 H21 V35 H44 V42 H14 Z" fill="#F5F6FA"/><path d="M21 23 A12 12 0 0 1 33 35" fill="none" stroke="#5546FF" stroke-width="2.6" stroke-linecap="round"/><circle cx="21" cy="35" r="3" fill="#5546FF"/></svg></div>
+          <span class="pill pill-live">Live</span>
+        </div>
+        <h3>Æramyd Plot</h3>
+        <p class="app-line">Measured sketches for site work. See lengths live as you draw.</p>
+        <ul class="tags" aria-label="Features">
+          <li>Live length, metric or imperial</li><li>Construction, electrical, solar and civil presets</li><li>PDF and CSV export</li>
+        </ul>
+        <dl class="meta">
+          <div><dt>Runs on</dt><dd>iPad, tablets, phones</dd></div>
+          <div><dt>Price</dt><dd>Free to start · Pro is a one-time coffee</dd></div>
+        </dl>
+        <div class="app-links">
+          <a class="btn btn-primary btn-sm" href="https://aeramyd-plot.pages.dev">Open</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="list soon">
       <div class="row">
         <div class="app-icon empty"></div>
-        <div class="row-text"><h3 class="muted-title">Next app</h3><p>On the workbench.</p></div>
+        <div class="row-text"><h3 class="muted-title">More on the workbench</h3><p>New tools are being built.</p></div>
         <span class="pill pill-soon">In progress</span>
       </div>
     </div>
@@ -247,7 +317,7 @@
   <section id="about" class="about reveal" aria-labelledby="about-title">
     <h2 id="about-title">About</h2>
     <div class="about-body">
-      <p class="big">A small independent studio. Calm, focused tools, each doing one job well. Free, no accounts, no ads.</p>
+      <p class="big">A small independent studio. Calm, focused tools, each doing one job well. No ads, no accounts, no subscriptions.</p>
       <p class="small">Æramyd is said AIR-uh-mid, an original spelling inspired by the Ilokano word <em>aramid</em>, meaning work or creation.</p>
     </div>
   </section>

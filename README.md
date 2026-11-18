@@ -15,6 +15,8 @@ The home of Æramyd, an independent app studio. The site has a live snap demo fr
 | App | Link | Code |
 |---|---|---|
 | Æramyd Sketch | [aeramyd-sketch.pages.dev](https://aeramyd-sketch.pages.dev) | [aeramyd-sketch](https://github.com/aeramyd/aeramyd-sketch) |
+| Æramyd Notes | [aeramyd-notes.pages.dev](https://aeramyd-notes.pages.dev) | [aeramyd-notes](https://github.com/aeramyd/aeramyd-notes) |
+| Æramyd Plot | [aeramyd-plot.pages.dev](https://aeramyd-plot.pages.dev) | Private |
 
 ## Files
 
