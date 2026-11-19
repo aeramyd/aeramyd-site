@@ -12,11 +12,11 @@ The home of Æramyd, an independent app studio. The site has a live snap demo fr
 
 ## Apps
 
-| App | Link | Code |
-|---|---|---|
-| Æramyd Sketch | [aeramyd-sketch.pages.dev](https://aeramyd-sketch.pages.dev) | [aeramyd-sketch](https://github.com/aeramyd/aeramyd-sketch) |
-| Æramyd Notes | [aeramyd-notes.pages.dev](https://aeramyd-notes.pages.dev) | [aeramyd-notes](https://github.com/aeramyd/aeramyd-notes) |
-| Æramyd Plot | [aeramyd-plot.pages.dev](https://aeramyd-plot.pages.dev) | Private |
+| App | Link |
+|---|---|
+| Æramyd Sketch | [aeramyd-sketch.pages.dev](https://aeramyd-sketch.pages.dev) |
+| Æramyd Notes | [aeramyd-notes.pages.dev](https://aeramyd-notes.pages.dev) |
+| Æramyd Plot | [aeramyd-plot.pages.dev](https://aeramyd-plot.pages.dev) |
 
 ## Files
 
@@ -27,6 +27,7 @@ The home of Æramyd, an independent app studio. The site has a live snap demo fr
 | `404.html` | Page-not-found screen |
 | `manifest.webmanifest` | Name and icons for home-screen shortcuts |
 | `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `icon-*.png` | Icons |
+| `apps/` | Official app icons (Sketch, Notes, Plot) |
 | `og-image.png` | Preview image for link sharing (1200×630) |
 | `_headers` | Cloudflare security and caching headers |
 | `robots.txt`, `sitemap.xml` | Search engines |
