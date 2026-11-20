@@ -23,6 +23,7 @@ The home of Æramyd, an independent app studio. The site has a live snap demo fr
 | File | What it is |
 |---|---|
 | `index.html` | Home page (styles and script inside) |
+| `sketch.html`, `notes.html`, `plot.html` | App pages, served at `/sketch`, `/notes`, `/plot` |
 | `privacy.html` | Privacy page, served at `/privacy` |
 | `404.html` | Page-not-found screen |
 | `manifest.webmanifest` | Name and icons for home-screen shortcuts |
@@ -31,6 +32,8 @@ The home of Æramyd, an independent app studio. The site has a live snap demo fr
 | `og-image.png` | Preview image for link sharing (1200×630) |
 | `_headers` | Cloudflare security and caching headers |
 | `robots.txt`, `sitemap.xml` | Search engines |
+| `sketch.html`, `notes.html`, `plot.html` | App pages, served at `/sketch`, `/notes`, `/plot` |
+| `5f2664c1a5df3318c3de33a8dfcf4e10.txt` | IndexNow key for Bing (keep it) |
 
 Plain HTML, CSS and JavaScript. No framework, no build step.
 
